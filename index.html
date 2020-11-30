@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
     <title>Портфолио Насти Жуковой</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
@@ -15,7 +15,13 @@
         <a class="header-phone" <a href="tel:+37360022208">+37360022208</a>
       </div>
     </header>
-
+    <nav>
+        <ul class="main-menu">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#skill">Мои навыки</a></li>
+          <li><a href="#works">Мои работы</a></li>
+        </ul>
+    </nav>
     <section class="hero-image">
       <div class="container">
         <h1 class="heading">Анастасия Жукова</h1>
@@ -25,24 +31,46 @@
 
     <section class="intro">
       <div class="container">
+        <a name="about"></a>
         <h2 class="subheading">Давайте познакомимся</h2>
+        <figure>
+            <img src="files/nastya1.jpg" width="928" alt="Фотография Насти Жуковой">
+        </figure>
         <h3> Меня зовут Настя Жукова, мне 16 лет</h3>
-        <p> Занимаюсь большим теннисом уже 8 лет и преподаю маленьким деткам.</p>
-        <h3> Могу обучать игре в большой теннис любого!</h3>
+        <p> Занимаюсь большим теннисом уже 8 лет и с огромным удовольствием преподаю теннис детям</p>
+        <div class="achievements">
+          <img src="files/trofei.jpg" width="460" alt="<Мой первый теннисный трофей">
+          <img src="files/pupils.jpg" width="460" alt="<Будущие чемпионы по теннису">
+        </div>
         <p> Это увлекательно, а главное, полезно для здоровья.</p>
+        <div class="skills">
+          <a name="skill"></a>
+          <h3>Мои навыки</h3>
+          <dl class="skills-list">
+            <dt class="skill-tennis">Теннис</dt>
+            <dd class="level"><div style="width: 75%;">75%</div></dd>
+            <dt class="skill-trener">Тренер по теннису</dt>
+            <dd class="level"><div style="width: 95%;">95%</div></dd>
+            <dt class="skill-html">HTML</dt>
+            <dd class="level"><div style="width: 40%;">40%</div></dd>
+            <dt class="skill-css">CSS</dt>
+            <dd class="level"><div style="width: 25%;">25%</div></dd>
+          </dl>
+        </div>
     </div>
     </section>
 
     <section class="portfolio">
-      <div class="container">
-        <h2 class="subheading">Мои работы</h2>
-
-        <h3>Сайт инструктора Кекса</h3>
-        <p>Небольшой лендинг о школе для начинающих.</p>
-
-        <h3>Блог начинающего верстальщика</h3>
-        <p>Статический блог про обучение HTML и CSS.</p>
-      </div>
+      <a name="works"></a>
+        <div class="container">
+          <h2 class="subheading">Мои работы</h2>
+            <figure class="project-image">
+              <img src="files/project.jpg" width="928" alt="Cайт инструктора Кекса">
+            </figure>
+          <h3>Сайт инструктора Кекса</h3>
+          <p>Небольшой лендинг о школе для начинающих.</p>
+            <a class="button" href="source/project/index.html">Открыть страницу</a>
+        </div>
     </section>
 
     <footer class="page-footer">
